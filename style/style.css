@@ -1,0 +1,117 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC',   sans-serif;
+  font-family: 'Noto Serif TC',serif;
+}
+
+header {
+  background-color: #b4e2b4;
+  width: 100%;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header h1 i {
+  font-size: 3rem;
+}
+
+nav {
+  background-color: #628f62;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li a {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: #c4c4c4;
+  font-size: 1.25rem;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  /*動畫慢2秒*/
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+nav ul li a i {
+  font-size: 1.25rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.left {
+  padding: 2rem;
+}
+
+section.right {
+  padding: 2rem;
+}
+
+section.right h5 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+section.right div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*共用函數*/
+.p {
+  color: blue;
+}
+
+.h1, .p {
+  background-color: #fff;
+}
+
+.h2, .p {
+  font-size: large;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+}
+
+/*繼承*/
+.p {
+  font-size: 16px;
+}
+
+div.p {
+  width: 250px;
+  font: 16px/20px;
+}
+/*# sourceMappingURL=style.css.map */

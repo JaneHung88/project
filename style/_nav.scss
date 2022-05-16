@@ -1,0 +1,25 @@
+nav{
+    background-color:$nav-b-bolor;
+    ul{
+        display: flex;
+        padding-left: 1rem;
+        list-style-type: none;
+
+        li{
+            display: flex;
+            a{
+                padding:0.5rem 0.75rem;
+                text-decoration: none;
+                color:#c4c4c4;
+                font-size: 1.25rem;
+                transition: all 2s ease; /*動畫慢2秒*/
+                &:hover{
+                    color:yellow;
+                }
+                i{
+                    font-size: 1.25rem;
+                 }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC',   sans-serif;
+    font-family: 'Noto Serif TC',serif;
+
+}
+
+$header-b-color:rgb(180, 226, 180);
+$nav-b-bolor:rgb(98, 143, 98);
+
+@import "./header";
+@import "./nav";
+
+@mixin flexbox($direction,$juscon){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $juscon;
+}
+
+main{
+    display: flex;
+}
+
+section.left{
+    padding:2rem;
+}
+
+section.right{
+    padding:2rem;
+
+    h5{
+        font-size:1.25rem;
+        text-align:center;
+    }
+    div.links{
+        @include flexbox(row,space-between )
+    }
+}
+/*共用函數*/
+%fontcolor{       
+    color:blue;
+}
+
+.h1{
+    background-color: #fff;
+}
+
+.h2{
+    font-size: large;
+    text-decoration: double;
+}
+
+/*繼承*/
+.p{
+    @extend.h1;    
+    @extend.h2;
+    @extend %fontcolor;
+    font-size:16px;
+}
+
+
+div.p{
+    $width:500px;
+    width:$width/2;
+    font:16px/20px;
+}
